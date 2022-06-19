@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta name="theme-color" content="#000000"/>
+        <title>Pizza</title>
+        <link rel="icon" href="https://image.similarpng.com/very-thumbnail/2020/05/Pizza-logo-design-template-Vector-PNG.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="gks.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-1">
+                <h1 class="gk1">PizzaShop</h1>
+            </div>
+        </nav>
+        <div style="width: 50%; display: inline-flex; margin-top: 150px;">
+            <img src="https://www.iconpacks.net/icons/2/free-add-to-cart-icon-3046-thumb.png" width="80px" height="80px" style="margin-left: 50px; padding: 10px; align-items: center;">
+            <h1 style="display: flex; width: 100%; align-items: center;"><b>Order summary</b></h1>
+        </div>
+        <div style="margin-left: 80px; padding-bottom: 50px;">
+            <form action="/cart" method="post">
+                <input type="email" name="email" placeholder="Enter Email" style="width: 300px;">
+                <button type="submit" style="margin-left: 20px; padding: 2px;">Submit</button>
+            </form>
+        </div>
+        <div style="display: flex; padding-left: 100px;">
+                <div style="padding-left: 10px;">
+                    <h2>Order ID</h2>
+                    <ol>
+                        <% addlist1.forEach(function(elements){ %>
+                            <li> <%=elements%></li>
+                        <% }) %>
+                    </ol>
+                </div>
+                <div style="padding-left: 100px;">
+                    <h2>Type</h2>
+                    <% addlist2.forEach(function(elements){ %>
+                         <p><%=elements%></p>
+                    <% }) %>
+                </div>
+                <div style="padding-left: 100px;">
+                    <h2>Size</h2>
+                    <% addlist3.forEach(function(elements){ %>
+                        <p><%=elements%></p>
+                    <% }) %>
+                </div>
+                <div style="padding-left: 100px;">
+                    <h2>Price</h2>
+                    <% addlist4.forEach(function(elements){ %>
+                        <p><%=elements%></p>
+                    <% }) %>
+                </div>
+                <div style="padding-left: 100px;">
+                    <h2>Date/Time</h2>
+                    <% addlist5.forEach(function(elements){ %>
+                        <p><%=elements%></p>
+                    <% }) %>
+                </div>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <h2 style="margin-left: 535px; padding: 30px;">Total Amount : ₹ <%=totalamt%></h2>
+            <form action="/placeorder" method="post">
+                <div style="display: flex; height: 50%;">
+                    <h2 style="margin-left: 585px; padding-left: 30px; padding-right: 20px;">Addresss :</h2>
+                    <input type="text" name="mainaddress" style="font-size: medium; width: 300px;">
+                </div>
+                <div style="width: 60%; display: flex; padding-top: 25px; margin-left: 650px;">
+                    <div style="width: 50%;">
+                        <button class="home-4" type="submit" >Place Order</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer" style="top: 40vh;">
+            <div style="display: block; justify-content: center; align-items: center;">
+                    <h1 style = "font-size: 1.5rem; font-weight:bolder; color: gb(45, 45, 58); margin-bottom: 0px; margin-left: 20%;"><b>PizzaShop</b></h1>
+                <p style="display: flex; justify-content: center; font-weight: 600; color:rgb(49, 49, 50); font-size:0.8rem">....Made By Gautam Kumawat....</p>
+            </div>
+        </div>
+    </body>
+</html>

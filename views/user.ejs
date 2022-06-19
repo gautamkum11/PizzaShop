@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta name="theme-color" content="#000000"/>
+        <title>Pizza</title>
+        <link rel="icon" href="https://image.similarpng.com/very-thumbnail/2020/05/Pizza-logo-design-template-Vector-PNG.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="gks.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-1">
+                <h1 class="gk1">PizzaShop</h1>
+                <h3 class="gk1"><%=e%></h3>
+                <ul class="navbarcomp">
+                    <li class="h">
+                        <a class="navbarcomp-1" href="#home">Menu</a>
+                    </li>
+                    <li class="h">
+                        <a class="navbarcomp-1" href="#offers">Offers</a>
+                    </li>
+                    <li class="h">
+                        <a class="navbarcomp-1"href="/login">Login</a>
+                    </li>
+                    <li class="h">
+                        <a class="navbarcomp-1"href="/cart">
+                            <img src="https://www.iconpacks.net/icons/2/free-add-to-cart-icon-3046-thumb.png" width="100%">
+                        </a>
+                    </li>     
+                </ul>
+            </div>
+        </nav>
+        <section id="home" class="home-1">
+            <div class="home-1-1">
+                <div class="home-2">
+                    <div style="width: 50%;">
+                        <h3 class="home-3">Welcome Back <%=n%></h3>
+                    </div>
+                    <div style="width: 50%;">
+                        <h3 class="home-3">Are you Hungry ?</h3>
+                    </div>
+                    <h1 style="font-size: 3.5rem; font-weight:bolder; color: gb(45, 45, 58); margin-bottom: 0px; margin-top: 0px;"><b>Don't Wait !!</b></h1>
+                    <div style="display: flex; width: 100%;">
+                        <div style="width: 40%; display: flex; padding-top: 25px;">
+                            <div style="width: 100%;">
+                                <a class="home-4" href="#offers">Order Now</a>
+                            </div>
+                        </div>
+                        <div style="width: 40%; display: flex; padding-top: 25px;">
+                            <div style="width: 100%;">
+                                <a class="home-4" href="/status">Check Status</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" height="100%">
+            </div>
+        </section>
+        <div class="list" id="offers">
+                <div class="list-1-1">
+                    <form action="/cartdashboard" method="post">
+                        <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" >
+                        <input type="hidden" name = "username" value= <%=n%>>
+                        <input type="hidden" name = "useremail" value= <%=e%>>
+                        <h2 id="pname" style="display: flex; justify-content: center; margin: 0;">hot dog</h2>
+                        <input type="hidden" name="pname" value="Hot dog">
+                        <h3 id="psize" style="display: flex; justify-content: center; margin: 0;">small</h3>
+                        <input type="hidden" name="psize" value="Small">
+                        <div style="display: inline-flex; justify-content: space-between;">
+                            <h3 id="pamount" style="display: flex; align-items: center; justify-content: flex-start; margin: 0; padding-left: 20px;">₹250</h3>
+                            <input type="hidden" name="pamount" value="250">
+                            <div style="margin-left: 60%;">
+                                <button type="submit" class="home-40" href="#offers" style="font-size: 15px; display: flex;width: 100%;  padding: 10px; justify-content: center; margin-bottom: 5px;">+ Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-1-1">
+                    <form action="/cartdashboard" method="post">
+                        <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" >
+                        <input type="hidden" name = "username" value= <%=n%>>
+                        <input type="hidden" name = "useremail" value= <%=e%>>
+                        <h2 id="pname" style="display: flex; justify-content: center; margin: 0;">hot dog</h2>
+                        <input type="hidden" name="pname" value="Hot dog">
+                        <h3 id="psize" style="display: flex; justify-content: center; margin: 0;">small</h3>
+                        <input type="hidden" name="psize" value="Small">
+                        <div style="display: inline-flex; justify-content: space-between;">
+                            <h3 id="pamount" style="display: flex; align-items: center; justify-content: flex-start; margin: 0; padding-left: 20px;">₹250</h3>
+                            <input type="hidden" name="pamount" value="250">
+                            <div style="margin-left: 60%;">
+                                <button type="submit" class="home-40" href="#offers" style="font-size: 15px; display: flex;width: 100%;  padding: 10px; justify-content: center; margin-bottom: 5px;">+ Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-1-1">
+                    <form action="/cartdashboard" method="post">
+                        <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" >
+                        <input type="hidden" name = "username" value= <%=n%>>
+                        <input type="hidden" name = "useremail" value= <%=e%>>
+                        <h2 id="pname" style="display: flex; justify-content: center; margin: 0;">hot dog</h2>
+                        <input type="hidden" name="pname" value="Hot dog">
+                        <h3 id="psize" style="display: flex; justify-content: center; margin: 0;">small</h3>
+                        <input type="hidden" name="psize" value="Small">
+                        <div style="display: inline-flex; justify-content: space-between;">
+                            <h3 id="pamount" style="display: flex; align-items: center; justify-content: flex-start; margin: 0; padding-left: 20px;">₹250</h3>
+                            <input type="hidden" name="pamount" value="250">
+                            <div style="margin-left: 60%;">
+                                <button type="submit" class="home-40" href="#offers" style="font-size: 15px; display: flex;width: 100%;  padding: 10px; justify-content: center; margin-bottom: 5px;">+ Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-1-1">
+                    <form action="/cartdashboard" method="post">
+                        <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" >
+                        <input type="hidden" name = "username" value= <%=n%>>
+                        <input type="hidden" name = "useremail" value= <%=e%>>
+                        <h2 id="pname" style="display: flex; justify-content: center; margin: 0;">hot dog</h2>
+                        <input type="hidden" name="pname" value="Hot dog">
+                        <h3 id="psize" style="display: flex; justify-content: center; margin: 0;">small</h3>
+                        <input type="hidden" name="psize" value="Small">
+                        <div style="display: inline-flex; justify-content: space-between;">
+                            <h3 id="pamount" style="display: flex; align-items: center; justify-content: flex-start; margin: 0; padding-left: 20px;">₹250</h3>
+                            <input type="hidden" name="pamount" value="250">
+                            <div style="margin-left: 60%;">
+                                <button type="submit" class="home-40" href="#offers" style="font-size: 15px; display: flex;width: 100%;  padding: 10px; justify-content: center; margin-bottom: 5px;">+ Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-1-1">
+                    <form action="/cartdashboard" method="post">
+                        <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" >
+                        <input type="hidden" name = "username" value= <%=n%>>
+                        <input type="hidden" name = "useremail" value= <%=e%>>
+                        <h2 id="pname" style="display: flex; justify-content: center; margin: 0;">hot dog</h2>
+                        <input type="hidden" name="pname" value="Hot dog">
+                        <h3 id="psize" style="display: flex; justify-content: center; margin: 0;">small</h3>
+                        <input type="hidden" name="psize" value="Small">
+                        <div style="display: inline-flex; justify-content: space-between;">
+                            <h3 id="pamount" style="display: flex; align-items: center; justify-content: flex-start; margin: 0; padding-left: 20px;">₹250</h3>
+                            <input type="hidden" name="pamount" value="250">
+                            <div style="margin-left: 60%;">
+                                <button type="submit" class="home-40" href="#offers" style="font-size: 15px; display: flex;width: 100%;  padding: 10px; justify-content: center; margin-bottom: 5px;">+ Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-1-1">
+                    <form action="/cartdashboard" method="post">
+                        <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" >
+                        <input type="hidden" name = "username" value= <%=n%>>
+                        <input type="hidden" name = "useremail" value= <%=e%>>
+                        <h2 id="pname" style="display: flex; justify-content: center; margin: 0;">hot dog</h2>
+                        <input type="hidden" name="pname" value="Hot dog">
+                        <h3 id="psize" style="display: flex; justify-content: center; margin: 0;">small</h3>
+                        <input type="hidden" name="psize" value="Small">
+                        <div style="display: inline-flex; justify-content: space-between;">
+                            <h3 id="pamount" style="display: flex; align-items: center; justify-content: flex-start; margin: 0; padding-left: 20px;">₹250</h3>
+                            <input type="hidden" name="pamount" value="250">
+                            <div style="margin-left: 60%;">
+                                <button type="submit" class="home-40" href="#offers" style="font-size: 15px; display: flex;width: 100%;  padding: 10px; justify-content: center; margin-bottom: 5px;">+ Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-1-1">
+                    <form action="/cartdashboard" method="post">
+                        <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" >
+                        <input type="hidden" name = "username" value= <%=n%>>
+                        <input type="hidden" name = "useremail" value= <%=e%>>
+                        <h2 id="pname" style="display: flex; justify-content: center; margin: 0;">hot dog</h2>
+                        <input type="hidden" name="pname" value="Hot dog">
+                        <h3 id="psize" style="display: flex; justify-content: center; margin: 0;">small</h3>
+                        <input type="hidden" name="psize" value="Small">
+                        <div style="display: inline-flex; justify-content: space-between;">
+                            <h3 id="pamount" style="display: flex; align-items: center; justify-content: flex-start; margin: 0; padding-left: 20px;">₹250</h3>
+                            <input type="hidden" name="pamount" value="250">
+                            <div style="margin-left: 60%;">
+                                <button type="submit" class="home-40" href="#offers" style="font-size: 15px; display: flex;width: 100%;  padding: 10px; justify-content: center; margin-bottom: 5px;">+ Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-1-1">
+                    <form action="/cartdashboard" method="post">
+                        <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" >
+                        <input type="hidden" name = "username" value= <%=n%>>
+                        <input type="hidden" name = "useremail" value= <%=e%>>
+                        <h2 id="pname" style="display: flex; justify-content: center; margin: 0;">hot dog</h2>
+                        <input type="hidden" name="pname" value="Hot dog">
+                        <h3 id="psize" style="display: flex; justify-content: center; margin: 0;">small</h3>
+                        <input type="hidden" name="psize" value="Small">
+                        <div style="display: inline-flex; justify-content: space-between;">
+                            <h3 id="pamount" style="display: flex; align-items: center; justify-content: flex-start; margin: 0; padding-left: 20px;">₹250</h3>
+                            <input type="hidden" name="pamount" value="250">
+                            <div style="margin-left: 60%;">
+                                <button type="submit" class="home-40" href="#offers" style="font-size: 15px; display: flex;width: 100%;  padding: 10px; justify-content: center; margin-bottom: 5px;">+ Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-1-1">
+                    <form action="/cartdashboard" method="post">
+                        <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-17.png" width="100%" >
+                        <input type="hidden" name = "username" value= <%=n%>>
+                        <input type="hidden" name = "useremail" value= <%=e%>>
+                        <h2 id="pname" style="display: flex; justify-content: center; margin: 0;">hot dog</h2>
+                        <input type="hidden" name="pname" value="Hot dog">
+                        <h3 id="psize" style="display: flex; justify-content: center; margin: 0;">small</h3>
+                        <input type="hidden" name="psize" value="Small">
+                        <div style="display: inline-flex; justify-content: space-between;">
+                            <h3 id="pamount" style="display: flex; align-items: center; justify-content: flex-start; margin: 0; padding-left: 20px;">₹250</h3>
+                            <input type="hidden" name="pamount" value="250">
+                            <div style="margin-left: 60%;">
+                                <button type="submit" class="home-40" href="#offers" style="font-size: 15px; display: flex;width: 100%;  padding: 10px; justify-content: center; margin-bottom: 5px;">+ Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+        <div class="footer">
+            <div style="display: block; justify-content: center; align-items: center;">
+                <!-- <div style="width: 100%;"> -->
+                    <h1 style = "font-size: 1.5rem; font-weight:bolder; color: gb(45, 45, 58); margin-bottom: 0px; margin-left: 20%;"><b>PizzaShop</b></h1>
+                <!-- </div> -->
+                <p style="display: flex; justify-content: center; font-weight: 600; color:rgb(49, 49, 50); font-size:0.8rem">....Made By Gautam Kumawat....</p>
+            </div>
+        </div>
+    </body>
+</html>
